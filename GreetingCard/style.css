@@ -1,0 +1,77 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes flowerAnimation {
+    0% { transform: scale(0) rotate(0deg); }
+    50% { transform: scale(1.2) rotate(45deg); }
+    100% { transform: scale(1) rotate(0deg); }
+  }
+
+  body{
+    background-color: #00235B;
+    justify-self: start;
+  }
+  .card {
+    background-color: #FFDD83;
+      width: 400px;
+      margin: 50px auto;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 2s ease-in-out;
+  }
+
+  h1 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+      
+  }
+
+  .message {
+    font-size: 18px;
+    animation: flowerAnimation 3s infinite alternate;
+  }
+
+  .flower {
+    width: 120px;
+    height: 120px;
+    margin-top: 35px;
+    background-color: #00235B;
+    border-radius: 10%;
+    position: relative;
+    animation: flowerAnimation 3s infinite alternate;
+  }
+
+  .flowerRight{
+    margin-left: 20px;
+    width: 120px;
+    height: 120px;
+    margin-top: 35px;
+    background-color: #00235B;
+    border-radius: 10%;
+    position: relative;
+    animation: flowerAnimation 3s infinite alternate;
+
+  }
+
+  .petal {
+    width: 30px;
+    height: 90px;
+    background-color: #98DFD6;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+  }
+
+    .petal-1 { transform: rotate(0deg); }
+    .petal-2 { transform: rotate(45deg); }
+    .petal-3 { transform: rotate(90deg); }
+    .petal-4 { transform: rotate(135deg); }
+    .petal-5 { transform: rotate(180deg); }
+    .petal-6 { transform: rotate(225deg); }
+    .petal-7 { transform: rotate(270deg); }
+    .petal-8 { transform: rotate(315deg); }

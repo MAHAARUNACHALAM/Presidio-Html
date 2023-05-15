@@ -1,0 +1,97 @@
+h1{
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.scale{
+    margin: 200px;
+    background-color: #27cb14;
+    border-radius: 50%;
+    box-shadow: 15px 15px 15px rgba(222, 17, 17, 0.1);
+    padding: 30px;
+    transform: scale(1.5);
+    width: 300px;
+}
+.container{
+    display: contents;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.boxskew{
+    background-color: #27cb14;
+    border-radius: 50%;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    transform: skew(-10deg);
+    width: 300px;
+    
+}
+.boxskewX{
+    margin: 50px;
+    align-self: start;
+    justify-content: flex-end;
+    padding-left: 10%;
+    background-color: #27cb14;
+    transform: skewX(-50deg);
+    height: 20%;
+    width: 20%;
+    border-radius: 30%;
+
+}
+p{
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    text-align: center;
+    overflow: hidden;
+}
+.boxskewY{
+    margin: 20px;
+    background-color: #27cb14;
+    transform: skewY(-10deg);
+}
+.boxskewXY{
+    margin: 20px;
+    background-color: #27cb14;
+    transform: skew(-10deg, -10deg);
+}
+.skew-box {
+    margin: 40px;
+    padding-top: 20%;
+    width: 200px;
+    height: 200px;
+    background-color: #1fdd6b;
+    transform: skew(20deg);
+    transition: transform 0.3s ease;
+  }
+
+  .skew-box:hover {
+    transform: skew(20deg) scale(1.1);
+  }
+
+  .skew-box-content {
+    display: none;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    transform: skew(-20deg);
+
+  }
+
+  .skew-box:hover .skew-box-content {
+    display: block;
+  }

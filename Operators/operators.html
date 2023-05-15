@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations</title>
+    <link rel="stylesheet" type="text/css" href="operators.css">
+</head>
+<script>
+    function add(){
+        let a = 10;
+        let b = 20;
+        let c = a + b;
+        document.write("Addition of a and b is: " + c + "<br>");
+    }
+    function sub(){
+        let a = 10;
+        let b = 20;
+        let c = a - b;
+        document.write("Subtraction of a and b is: " + c + "<br>");
+    }
+    function mul(){
+        let a = 10;
+        let b = 20;
+        let c = a * b;
+        document.write("Multiplication of a and b is: " + c + "<br>");
+    }
+    function div(){
+        let a = 10;
+        let b = 20;
+        let c = a / b;
+        document.write("Division of a and b is: " + c + "<br>");
+    }
+    function mod(){
+        let a = 10;
+        let b = 20;
+        let c = a % b;
+        document.write("Modulus of a and b is: " + c + "<br>");
+    }
+    function inc(){
+        let a = 10;
+        let b = 20;
+        let c = a++;
+        document.write("Increment of a is: " + c + "<br>");
+    }
+    function dec(){
+        let a = 10;
+        let b = 20;
+        let c = a--;
+        document.write("Decrement of a is: " + c + "<br>");
+    }
+    function and(){
+        let a = 10;
+        let b = 20;
+        let c = a & b;
+        document.write("Bitwise AND of a and b is: " + c + "<br>");
+    }
+    function or(){
+        let a = 10;
+        let b = 20;
+        let c = a | b;
+        document.write("Bitwise OR of a and b is: " + c + "<br>");
+    }
+    function xor(){
+        let a = 10;
+        let b = 20;
+        let c = a ^ b;
+        document.write("Bitwise XOR of a and b is: " + c + "<br>");
+    }
+    function not(){
+        let a = 10;
+        let b = 20;
+        let c = ~a;
+        document.write("Bitwise NOT of a is: " + c + "<br>");
+    }
+    function lshift(){
+        let a = 10;
+        let b = 20;
+        let c = a << b;
+        document.write("Left Shift of a and b is: " + c + "<br>");
+    }
+    function rshift(){
+        let a = 10;
+        let b = 20;
+        let c = a >> b;
+        document.write("Right Shift of a and b is: " + c + "<br>");
+    }
+    function urshift(){
+        let a = 10;
+        let b = 20;
+        let c = a >>> b;
+        document.write("Unsigned Right Shift of a and b is: " + c + "<br>");
+    }
+    function andand(){
+        let a = 10;
+        let b = 20;
+        let c = a && b;
+        document.write("Logical AND of a and b is: " + c + "<br>");
+    }
+    function oror(){
+        let a = 10;
+        let b = 20;
+        let c = a || b;
+        document.write("Logical OR of a and b is: " + c + "<br>");
+    }
+    function ternary(){
+        let a = 10;
+        let b = 20;
+        let c = a > b ? "a is greater than b" : "b is greater than a";
+        document.write("Ternary of a and b is: " + c + "<br>");
+    }
+    function typeofop(){
+        let a = 10;
+        let b = 20;
+        let c = typeof a;
+        document.write("Typeof of a is: " + c + "<br>");
+    }
+    function instanceofop(){
+        let a = 10;
+        let b = 20;
+        let c = a instanceof Number;
+        document.write("Instanceof of a is: " + c + "<br>");
+    }
+    function deleteop(){
+        let a = 10;
+        let b = 20;
+        let c = delete a;
+        document.write("Delete of a is: " + c + "<br>");
+    }
+    function voidop(){
+        let a = 10;
+        let b = 20;
+        let c = void a;
+        document.write("Void of a is: " + c + "<br>");
+    }
+    function inop(){
+        let a = 10;
+        let b = 20;
+        let c = "a" in a;
+        document.write("In of a is: " + c + "<br>");
+    }
+    function newop(){
+        let a = 10;
+        let b = 20;
+        let c = new Number(a);
+        document.write("New of a is: " + c + "<br>");
+    }
+    function thisop(){
+        let a = 10;
+        let b = 20;
+        let c = this;
+        document.write("This of a is: " + c + "<br>");
+    }
+    function functionop(){
+        let a = 10;
+        let b = 20;
+        let c = function(a,b){
+            return a+b;
+        }
+        document.write("Function of a is: " + c + "<br>");
+    }
+    // function commaop(){
+    //     let a = 10;
+    //     let b = 20;
+    //     let c = a,b;
+    //     document.write("Comma of a is: " + c + "<br>");
+    // }
+    function assignmentop(){
+        let a = 10;
+        let b = 20;
+        let c = a = b;
+        document.write("Assignment of a is: " + c + "<br>");
+    }
+    function evalop(){
+        let a = 10;
+        let b = 20;
+        let c = eval(a+b);
+        document.write("Eval of a is: " + c + "<br>");
+    }
+    function arrayop(){
+        let a = 10;
+        let b = 20;
+        let c = [a,b];
+        document.write("Array of a is: " + c + "<br>");
+    }
+    function objectop(){
+        let a = 10;
+        let b = 20;
+        let c = {a,b};
+        document.write("Object of a is: " + c + "<br>");
+    }
+    function typeofop(){
+        let a = 10;
+        let b = 20;
+        let c = typeof a;
+        document.write("Typeof of a is: " + c + "<br>");
+    }
+    function instanceofop(){
+        let a = 10;
+        let b = 20;
+        let c = a instanceof Number;
+        document.write("Instanceof of a is: " + c + "<br>");
+    }
+    function deleteop(){
+        let a = 10;
+        let b = 20;
+        let c = delete a;
+        document.write("Delete of a is: " + c + "<br>");
+    }
+</script>
+<header>
+    <h1>Operators</h1>
+</header> 
+<body>
+    
+
+    <nav>
+        <ul>
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="div()">Division</button>
+    <button onclick="mod()">Modulus</button>
+    <button onclick="inc()">Increment</button>
+    <button onclick="dec()">Decrement</button>
+    <button onclick="and()">Bitwise AND</button>
+    <button onclick="or()">Bitwise OR</button>
+    <button onclick="xor()">Bitwise XOR</button>
+    <button onclick="not()">Bitwise NOT</button>
+    <button onclick="lshift()">Left Shift</button>
+    <button onclick="rshift()">Right Shift</button>
+    <button onclick="urshift()">Unsigned Right Shift</button>
+    <button onclick="andand()">Logical AND</button>
+    <button onclick="oror()">Logical OR</button>
+    <button onclick="ternary()">Ternary</button>
+    <button onclick="typeofop()">Typeof</button>
+    <button onclick="instanceofop()">Instanceof</button>
+    <button onclick="deleteop()">Delete</button>
+    <button onclick="voidop()">Void</button>
+    <button onclick="inop()">In</button>
+    <button onclick="newop()">New</button>
+    <button onclick="thisop()">This</button>
+    <button onclick="functionop()">Function</button>
+    <button onclick="commaop()">Comma</button>
+    <button onclick="assignmentop()">Assignment</button>
+    <button onclick="evalop()">Eval</button>
+    <button onclick="arrayop()">Array</button>
+    <button onclick="objectop()">Object</button>
+    <button onclick="typeofop()">Typeof</button>
+    <button onclick="instanceofop()">Instanceof</button>
+    <button onclick="deleteop()">Delete</button>
+</ul>
+</nav>
+</body>
+</html>

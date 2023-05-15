@@ -1,0 +1,66 @@
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .discount-table {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead th {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tbody td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  
+  .bill-form {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .bill-form h3 {
+    margin-bottom: 10px;
+  }
+  
+  .bill-form input[type="number"],
+  .bill-form button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .bill-form input[type="number"] {
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .bill-form button {
+    padding: 10px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bill-form button:hover {
+    background-color: #555;
+  }
+  

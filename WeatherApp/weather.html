@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .weather-icon {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    
+    .temperature {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .description {
+      font-size: 16px;
+      color: #666666;
+      margin-bottom: 20px;
+    }
+    
+    .location {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    <div>
+        <label for="city-select">Select City: </label>
+        <select id="city-select">
+          <option value="">Select a city</option>
+        </select>
+      </div>
+    <div id="weather-info"></div>
+  </div>
+  <script>
+    // Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key
+    const apiKey = '24034b357fbbed95a577df3566ce4210';
+    // Replace 'YOUR_LATITUDE' and 'YOUR_LONGITUDE' with the desired location coordinates
+    var latitude = '13.04797';
+    var longitude = '80.22187';
+    var citySelect = document.getElementById('city-select');
+    const weatherInfo = document.getElementById('weather-info');
+    var cities=['chennai','trichy','pune','mumbai','delhi','kolkata','bangalore','hyderabad','coimbatore','madurai'];
+    for(var i=0;i<cities.length;i++){
+      var option = document.createElement("option");
+      option.text = cities[i];
+      option.value = cities[i];
+      citySelect.add(option);
+    }
+    //Get latitude and longitude of city using api call https://geocode.xyz/${city}?json=1
+    fetch(`https://geocode.xyz/${citySelect}?json=1`).then(response => response.json()).then(data => {
+        console.log(citySelect);
+       latitude = data.latt;
+       longitude = data.longt;
+    });
+
+    citySelect.addEventListener('change', () => {
+      const selectedCity = citySelect.value;
+      
+      if (selectedCity) {
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${selectedCity}&appid=${apiKey}&units=metric`)
+          .then(response => response.json())
+          .then(data => {
+            // Clear previous weather information
+            weatherInfo.innerHTML = '';
+            
+            // Get weather data
+            const temperature = data.main.temp;
+            const description = data.weather[0].description;
+            const icon = data.weather[0].icon;
+            
+            // Create HTML elements for weather information
+            const weatherIcon = document.createElement('img');
+            weatherIcon.className = 'weather-icon';
+            weatherIcon.src = `http://openweathermap.org/img/w/${icon}.png`;
+            
+            const temperatureElement = document.createElement('div');
+            temperatureElement.className = 'temperature';
+            temperatureElement.textContent = `${temperature}°C`;
+            
+            const descriptionElement = document.createElement('div');
+            descriptionElement.className = 'description';
+            descriptionElement.textContent = description;
+            
+            const locationElement = document.createElement('div');
+            locationElement.className = 'location';
+            locationElement.textContent = selectedCity;
+            
+            // Append weather information to the container
+            weatherInfo.appendChild(weatherIcon);
+            weatherInfo.appendChild(temperatureElement);
+            weatherInfo.appendChild(descriptionElement);
+            weatherInfo.appendChild(locationElement);
+          })
+          .catch(error => {
+            console.log('An error occurred:', error);
+          });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Resume">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mahaarunachalam">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .resume-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            animation: fade-in 1s ease-in-out;
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            animation: slide-in 1s ease-in-out;
+        }
+
+        @keyframes slide-in {
+            0% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .section {
+            margin-bottom: 30px;
+            animation: fade-in 1s ease-in-out;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .section-content {
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            animation: slide-up 1s ease-in-out;
+        }
+
+        @keyframes slide-up {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+        }
+
+        .references {
+            margin-top: 30px;
+        }
+
+        .reference {
+            margin-bottom: 10px;
+            animation: fade-in 1s ease-in-out;
+        }
+
+        .reference-name {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .hobby-projects {
+            margin-top: 30px;
+        }
+
+        .hobby-project {
+            margin-bottom: 10px;
+            animation: slide-up 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <h1>Resume</h1>
+
+        <div class="section">
+            <h2 class="section-title">Objective</h2>
+            <p class="section-content">Am looking for an interesting position in a well-known organization where I can learn new skills, expand my knowledge, and utilize the knowledge I have gained.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="section-content">
+                <div class="experience">
+                    <h3>Intern</h3>
+                    <p class="company-name">nStore Technologies Private Limited, Chennai</p>
+                    <p class="date">July 2022 - Current</p>
+                    <ul class="responsibilities">
+                        <li>IRCTC Food Delivery App Development</li>
+                        <li>Playing a key role in developing frontend and backend of the app</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h3>Contribution: Gasoline App development</h3>
+                    <p class="company-name">Company Name: Atsuya Technologies Private Limited, Chennai</p>
+                    <p class="date">July 2021 - December 2021</p>
+                    <ul class="responsibilities">
+                        <li>Developed a real-time project on Deep Learning (OCR)</li>
+                        <li>Played a key role in making the model run locally in the mobile app</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h3>Contribution: Gateway Design</h3>
+                    <p class="company-name">Company Name: NWAREHOUSE Pvt Ltd, Thanjavur</p>
+                    <p class="date">January 2020 - June 2022</p>
+                    <ul class="responsibilities">
+                        <li>Implemented a Decaying Window Algorithm to remove outlier data</li>
+                        <li>Developed logic to upload and fetch the data from AWS cloud and SQLite</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h3>Contribution: Remote access architecture development</h3>
+                    <p class="company-name">Company Name: CROBOT Technologies Pvt Ltd, Thanjavur</p>
+                    <p class="date">May 2022 - August 2022</p>
+                    <ul class="responsibilities">
+                        <li>Implemented the architecture to control robot remotely</li>
+                        <li>Developed a logic to map users with their multiple robots and implemented it using AWS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="section-content">
+                <p>SASTRA Deemed University, Thanjavur</p>
+                <p>B.Tech. Electronics and Instrumentation Engineering</p>
+                <p>2023</p>
+                <p>8.0217 CGPA</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Contact Information</h2>
+            <div class="section-content">
+                <div class="contact-info">
+                    <i class="fas fa-envelope"></i>
+                    <p>smahaarunachalam@gmail.com</p>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <p>9962561400</p>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Chennai 64</p>
+                </div>
+                <div class="contact-info">
+                    <i class="fab fa-linkedin"></i>
+                    <p>
+                        <a href="https://www.linkedin.com/in/mahaarunachal" target="_blank">linkedin.com/in/mahaarunachal</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="section-content">
+                <p>Programming Languages – C, C++, Python</p>
+                <p>APP Development - Flutter, React Native</p>
+                <p>API Development – Node JS, Flask</p>
+                <p>Cloud computing platform - AWS</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">References</h2>
+            <div class="section-content references">
+                <div class="reference">
+                    <p class="reference-name">Dr. N.S. Manigandan</p>
+                    <p class="reference-designation">Associate Professor, SASTRA University</p>
+                    <p class="reference-contact">Phone: 9894690344<br>Email: manigandanns@eie.sastra.edu</p>
+                </div>
+                <div class="reference">
+                    <p class="reference-name">Dr. D. Manivannan</p>
+                    <p class="reference-designation">Associate Professor, SASTRA University</p>
+                    <p class="reference-contact">Phone: 9894690344<br>Email: dmv@cse.sastra.edu</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Hobby Projects</h2>
+            <div class="section-content hobby-projects">
+                <div class="hobby-project">
+                    <p>Uber Eats Clone</p>
+                    <p>Zoom Clone</p>
+                </div>
+                <div class="hobby-project">
+                    <p>Tinder Clone</p>
+                    <p>Monitoring App</p>
+                </div>
+                <div class="hobby-project">
+                    <p>Home Automation</p>
+                    <p>Uber Eats</p>
+                    <p>Zoom meeting Clone Using REACT NATIVE</p>
+                </div>
+                <div class="hobby-project">
+                    <p>Tinder Clone Using REACT JS</p>
+                    <p>Temperature monitoring app using Flutter</p>
+                    <p>Humidity monitoring app using Flutter</p>
+                    <p>Controlling Home Appliances Over Voice Using IFTTT, APP, ESP32</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Additional Information</h2>
+            <div class="section-content">
+                <p>District Level Roller Skating Player</p>
+                <p>Awarded as the best programmer of the year 2018-19 at school level</p>
+                <p>Chairperson of SEEE Association of SASTRA</p>
+                <p>Vice president and Technical Head of Maths club of SASTRA (MCS)</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .section h2 {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .section p {
+      margin: 0;
+      color: #777;
+    }
+
+    .section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .section li {
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sample Resume</h1>
+
+    <div class="section">
+      <h2>Personal Information</h2>
+      <p>Name: Mahaarunachalam S</p>
+      <p>Email: smahaarunachalam@gmail.com</p>
+      <p>Phone: (+91)9962561400</p>
+      <p>Address: 31,32 A2 Bharath St, Chennai-600064</p>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li>Bachelor of Technology, Electronics and Instrumentation Engineering -SASTRA University (2023)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Flutter</li>
+        <li>Python</li>
+        <li>NodeJS</li>
+        <li>Git</li>
+        <li>AWS</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Experience</h2>
+      <p>nStore PVT. LTD. - Web Developer Intern(June 2022 - Jan 2023)</p>
+      <ul>
+        <li>Developed and maintained app using Flutter,NodeJs and AWS.</li>
+        <li>Collaborated with team members to implement new features and resolve issues.</li>
+        <li>Optimized websites for performance and responsiveness.</li>
+      </ul>
+
+      <p>Atsuya PVT. LTD. - Intern (Jan 2019 - July 2019)</p>
+      <ul>
+        <li>Assisted in App development tasks.</li>
+        <li>Contributed to the design and implementation of new features.</li>
+        <li>Performed testing and bug fixing.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li>Food Delivery App - Developed Food delivery app for college canteen</li>
+        <li>Zoom clone</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Optional: You can add JavaScript functionality here if needed
+  </script>
+</body>
+</html> -->

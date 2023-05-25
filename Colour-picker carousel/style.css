@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+  }
+  
+  .carousel {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .carousel__item {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    transition: background-color 0.3s ease;
+    display: none;
+  }
+  
+  .carousel__item.active {
+    display: block;
+  }
+  
+  .color-picker {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .carousel__nav {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .carousel__nav button {
+    padding: 10px 20px;
+    margin: 0 10px;
+  }
+  
